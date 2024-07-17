@@ -1,4 +1,12 @@
 general:
+  collectTelemetryData: false
 steps:
   mtaBuild:
     buildTarget: 'CF'
+  cloudFoundryDeploy:
+    deployTool: 'mtaDeployPlugin'
+    deployType: 'standard'
+    cloudFoundry:
+      org: '91f04dd4trial'
+      space: 'dev'
+      credentialsId: 'CF_CREDENTIALSID'
